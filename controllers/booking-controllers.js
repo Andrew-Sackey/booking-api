@@ -10,7 +10,7 @@ export const getOneBooking = (req, res) => {
 
 export const postBookings = async (req, res, next) => {
 try {
-  const newBooking = new booking()
+  const newBooking = new booking(req.body)
     
     const bookings = await newBooking.save(req.body)
   
