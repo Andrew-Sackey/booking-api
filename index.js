@@ -21,6 +21,6 @@ bookingApp.get("/booking", function (req, res, next) {
 });
 
 // listening port goes here
-bookingApp.listen(4000, function () {
+bookingApp.listen(process.env.port || 4000, function () {
     console.log("App is listening on port 4000");
   });
