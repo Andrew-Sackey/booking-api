@@ -22,5 +22,5 @@ bookingApp.get("/booking", function (req, res, next) {
 
 // listening port goes here
 bookingApp.listen(7000, function () {
-    console.log("App is listening on port 4000");
+    console.log("App is listening on port 7000");
   });
